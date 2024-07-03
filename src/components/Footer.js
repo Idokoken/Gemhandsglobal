@@ -28,11 +28,6 @@ const Wrapper = styled.footer`
   .footer .item .icon-header h3 {
     font-size: 30px;
     font-family: "Lobster", cursive;
-    background: linear-gradient(180deg, #FFDA16 30%, #090808 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
   }
   .footer .item h3 {
     color: var(--primary-color);
@@ -89,69 +84,69 @@ const Wrapper = styled.footer`
 `;
 
 function Footer() {
-    return (
-        <Wrapper>
-            <div className="footer">
-                <div className="item">
-                    <div className="icon-header">
-                        <img src="/images/brand.png" alt="brand" />{" "}
-                        <h3 className="ms-2">Gemhandsglobal</h3>
-                    </div>
-                </div>
-                <div className="item">
-                    <p>
-                        Gemhandsglobal
-                    </p>
-                </div>
-                <div className="item">
-                    <h3>Quick Links</h3>
-                    <p>
-                        <Link to="/">Home</Link>
-                    </p>
-                    <p>
-                        <Link to="/">Contact</Link>
-                    </p>
-                    <p>
-                        <Link to="/">About Us</Link>
-                    </p>
+  return (
+    <Wrapper>
+      <div className="footer">
+        <div className="item">
+          <div className="icon-header">
+            <img src="/images/brand.png" alt="brand" />{" "}
+            <h3 className="ms-2">Gemhandsglobal</h3>
+          </div>
+        </div>
+        <div className="item">
+          <p>
+            Gemhandsglobal
+          </p>
+        </div>
+        <div className="item">
+          <h3>Quick Links</h3>
+          <p>
+            <Link to="/">Home</Link>
+          </p>
+          <p>
+            <Link to="/">Contact</Link>
+          </p>
+          <p>
+            <Link to="/">About Us</Link>
+          </p>
 
-                </div>
-                <div className="item">
-                    <h4>Follow Us</h4>
-                    <div className="icons-container">
-                        <div className="icon-container">
-                            <Link to="https://facebook.com/leadways">
-                                <i className="fa-brands fa-facebook icon"></i>
-                            </Link>
-                        </div>
-
-                        <div className="icon-container">
-                            <Link to="https://twitter.com/leadways">
-                                <i className="fa-brands fa-twitter icon"></i>
-                            </Link>
-                        </div>
-
-                        <div className="icon-container">
-                            <Link to="https://instagram.com/leadways">
-                                <i className="fa-brands fa-instagram icon"></i>
-                            </Link>
-                        </div>
-
-                        <div className="icon-container">
-                            <Link to="https://youtube.com/leadways">
-                                <i className="fa-brands fa-youtube icon"></i>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div className="item">
+          <h4>Follow Us</h4>
+          <div className="icons-container">
+            <div className="icon-container">
+              <Link to="https://facebook.com/gemhandsglobal">
+                <i className="fa-brands fa-facebook icon"></i>
+              </Link>
             </div>
-            <div className="rule">
-                <p className="copywite">
-                    All Right reversed &copy; Gemhandsglobal 2024{" "}
-                </p>
+
+            <div className="icon-container">
+              <Link to="https://twitter.com/gemhandsglobal">
+                <i className="fa-brands fa-x-twitter icon"></i>
+              </Link>
             </div>
-        </Wrapper>
-    );
+
+            <div className="icon-container">
+              <Link to="https://instagram.com/gemhandsglobal">
+                <i className="fa-brands fa-instagram icon"></i>
+              </Link>
+            </div>
+
+            <div className="icon-container">
+              <Link to="https://youtube.com/gemhandsglobal">
+                <i className="fa-brands fa-youtube icon"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="rule">
+        <p className="copywite">
+          All Right reversed &copy; Gemhandsglobal 2024{" "}
+        </p>
+      </div>
+    </Wrapper>
+  );
 }
 
 export default Footer;

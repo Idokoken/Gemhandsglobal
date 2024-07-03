@@ -15,11 +15,6 @@ const Wrapper = styled.div`
     /* color: var(--primary-color); */
     font-size: 30px;
     font-family: "Lobster", cursive;
-    background: linear-gradient(180deg, #FFDA16 30%, #090808 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
   }
   a:hover {
     color: #0a0f83;
@@ -61,12 +56,12 @@ function Header({ user }) {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/posts">
+                                <NavLink className="nav-link" to="/">
                                     Contact
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">
+                                <NavLink className="nav-link" to="/">
                                     About Us
                                 </NavLink>
                             </li>
