@@ -8,11 +8,16 @@ const Wrapper = styled.div`
   font-family: "Poppins", sans-serif;
 
   nav {
-    box-shadow: 0 5px 5px #888888;
+    // box-shadow: 0 5px 5px #888888;
+    background: white;
+    
   }
+ nav .nav-item .nav-link{
+     color: var(--primary-color);
+ }
 
   .navbar-brand {
-    /* color: var(--primary-color); */
+    color: var(--primary-color); 
     font-size: 30px;
     font-family: "Lobster", cursive;
   }
@@ -25,7 +30,7 @@ const Wrapper = styled.div`
 function Header({ user }) {
     return (
         <Wrapper className="sticky-top">
-            <nav className="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+            <nav className="navbar navbar-expand-sm sticky-top navbar-light">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img

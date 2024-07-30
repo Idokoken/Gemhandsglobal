@@ -1,10 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { Tablet } from './../Responsive';
 import styled from "styled-components";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Tablet } from "../Responsive";
+import SubscribeForm from "../components/SubscribeForm";
 
 
 const Wrapper = styled.div`
@@ -33,79 +31,38 @@ const Wrapper = styled.div`
     // font-weight: 700;
   }
     .hero {
-   
-  .hero .hero-bg{
-    position: absolute;
+    height: 50vh;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
-}
-   .hero .slide {
-    height: 40vh;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    ${Tablet({ height: '60vh' })}
-  }
-
-  .hero .slide .product-container {
+    background-image: url("/images/home1.png");
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-    .hero .slide .hero1 {
-     background-image: url("/images/home1.png");
-    background-size: cover;
-    position: relative;
-  }
-     .hero .slide .hero2 {
-     background-image: url("/images/home2.png");
-    background-size: cover;
-    position: relative;
-  }
-  .hero .slide .product-container img {
-     height: 100%;
-     width: 100%;
-     onject-fit: cover;
-  }
+    color: white;
+    ${Tablet({ height: '85vh' })}
+    }
+    
+     
 
 `;
 
 
 const Home = () => {
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    // fade: true,
-    cssEase: "linear",
-    centerMode: true,
-    centerPadding: "0",
-  };
+
 
   return (
     <Wrapper>
       <div className="hero">
-        <div class='hero-bg'></div>
-        <div className="slide">
-          <Slider {...settings}>
-            <div className="product-container hero1">
-              <h2>welome to jemhands 1</h2>
-              <p>learn practical lorem learn practical lorem learn practical lorem learn practical lorem</p>
-            </div>
-            <div className="product-container hero2">
-              <h2>welome to jemhands 2</h2>
-              <p>learn practical lorem learn practical lorem learn practical lorem learn practical lorem</p>
-            </div>
-          </Slider>
-        </div>
-
+        <h1>Welcome to Gemhandsglobal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        </p>
+      </div>
+      <div className="mail">
+        <SubscribeForm />
       </div>
     </Wrapper>
   );

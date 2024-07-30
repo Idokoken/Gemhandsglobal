@@ -18,8 +18,8 @@ function App() {
 
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
         <Route path="/" element={<ComingSoon />} />
+        <Route path="/home" element={<Home />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
