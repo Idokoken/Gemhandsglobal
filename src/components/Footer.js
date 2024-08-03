@@ -20,7 +20,7 @@ const Wrapper = styled.footer`
 
   .footer .item {
     flex: 100%;
-    ${Tablet({ flex: "25%" })}
+    ${Tablet({ flex: "33%" })}
     display: flex;
     flex-direction: column;
     ${Tablet({ alignItems: "center" })}
@@ -92,22 +92,21 @@ function Footer() {
             <img src="/images/brand.png" alt="brand" />{" "}
             <h3 className="ms-2">Gemhandsglobal</h3>
           </div>
-        </div>
-        <div className="item">
           <p>
             Gemhandsglobal
           </p>
         </div>
+
         <div className="item">
           <h3>Quick Links</h3>
           <p>
             <Link to="/">Home</Link>
           </p>
           <p>
-            <Link to="/">Contact</Link>
+            <Link to="/#contact">Contact</Link>
           </p>
           <p>
-            <Link to="/">About Us</Link>
+            <Link to="/#about">About Us</Link>
           </p>
 
         </div>
@@ -143,6 +142,7 @@ function Footer() {
       <div className="rule">
         <p className="copywite">
           All Right reversed &copy; Gemhandsglobal 2024{" "}
+          {/* Copyright &copy; 2024 GemhandsGlobal - All Rights Reserved. */}
         </p>
       </div>
     </Wrapper>

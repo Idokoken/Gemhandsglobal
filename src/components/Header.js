@@ -61,12 +61,12 @@ function Header({ user }) {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/">
+                                <NavLink className="nav-link" to="/#contact">
                                     Contact
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/">
+                                <NavLink className="nav-link" to="/#about">
                                     About Us
                                 </NavLink>
                             </li>
