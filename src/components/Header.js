@@ -70,7 +70,11 @@ function Header({ user }) {
                                     About Us
                                 </NavLink>
                             </li>
-
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/#gallery">
+                                    Gallery
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -18,8 +18,8 @@ function App() {
 
       <Header />
       <Routes>
-        <Route path="/" element={<ComingSoon />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/soon" element={<ComingSoon />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

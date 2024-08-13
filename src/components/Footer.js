@@ -92,9 +92,10 @@ function Footer() {
             <img src="/images/brand.png" alt="brand" />{" "}
             <h3 className="ms-2">Gemhandsglobal</h3>
           </div>
-          <p>
-            Gemhandsglobal
-          </p>
+          {/* <p>
+            Empower, Protect, Prevail
+          </p> */}
+          <p>Empowerment, Protection, and the ability to overcome challenges.</p>
         </div>
 
         <div className="item">
@@ -107,6 +108,9 @@ function Footer() {
           </p>
           <p>
             <Link to="/#about">About Us</Link>
+          </p>
+          <p>
+            <Link to="/#gallery">Gallery</Link>
           </p>
 
         </div>

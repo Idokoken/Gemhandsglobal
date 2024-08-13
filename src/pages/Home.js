@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Tablet, Desktop } from './../Responsive';
 import styled from "styled-components";
 import SubscribeForm from "../components/SubscribeForm";
+import Stories from "../components/Stories";
 
 
 const Wrapper = styled.div`
@@ -206,30 +207,29 @@ const Wrapper = styled.div`
     align-items: center;
     height: 35vh;
     padding: 0 10px;
-    background-color: rgba(226, 223, 223, 1);
-    background-image: url('/images/product1.jpg');
-    background-size: cover;
     ${Tablet({ padding: '0 10px', height: '50vh' })}
     ${Desktop({ height: '60vh' })}
+}
+.products .product1{
+    background-color: rgba(226, 223, 223, 1);
+    background-image: url('/images/product2.jpg');
+    background-size: cover;   
+}
+.products .product2{
+    background-color: rgba(226, 223, 223, 1);
+    background-image: url('/images/product3.png');
+    background-size: cover;   
+}
+.products .product3{
+    background-color: rgba(226, 223, 223, 1);
+    background-image: url('/images/product4.jpg');
+    background-size: cover;   
 }
 .products h3{
     color: white;
     font-weight: 700;
 }
-.stories{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    padding: 0 10px;
-    margin: 20px 0;
-    background-image: url('/images/stories.jpg');
-    background-size: cover;
-}
-.stories h3{
-    color: white;
-    font-weight: 700;
-}
+
 .contact{
    display: flex;
    justify-content: center;
@@ -253,6 +253,45 @@ const Wrapper = styled.div`
     font-weight: 500;
     border-radius: 5px;
     text-decoration: none;
+}
+.contact .address{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    background: rgba(209, 23, 11, 0.2);
+    grid-gap: 10px;
+    border-radius: 20px;
+    ${Tablet({
+  display: 'grid', gridTemplateColumns: '45% 45%', padding: '30px', borderRadius: '30px'
+})}
+}
+.contact .address .one{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.contact .address .one div{
+    word-break: break-all;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+.contact .address .one p{
+    margin: 8px 0;
+    font-size: 14px;
+    ${Tablet({ margin: '10px 0', fontSize: '16px' })}
+    
+}
+.contact.address.one span{
+  flex - shrink: 0;
+  display: flex;
+  justify - content: center;
+  align - items: center;
+  color: var(--primary - color);
+  background: black;
+  width: 40px;
+  height: 40px;
+  border - radius: 50 %;
 }
 
 }
@@ -297,13 +336,13 @@ const Home = () => {
             <img src="/images/gallery3.jpg" alt="gallery" />
           </div>
           <div className="img-container">
-            <img src="/images/gallery1.jpg" alt="gallery" />
+            <img src="/images/gallery4.png" alt="gallery" />
           </div>
           <div className="img-container">
-            <img src="/images/gallery2.jpg" alt="gallery" />
+            <img src="/images/gallery5.jpg" alt="gallery" />
           </div>
           <div className="img-container">
-            <img src="/images/gallery2.jpg" alt="gallery" />
+            <img src="/images/gallery6.jpg" alt="gallery" />
           </div>
         </div>
       </div>
@@ -341,12 +380,12 @@ const Home = () => {
         <div className="product2">
           <h3>Most Popular</h3>
         </div>
-        <div className="product2">
+        <div className="product3">
           <h3>Best Value</h3>
         </div>
       </section>
-      <section className="stories">
-        <h3>Hear from our students</h3>
+      <section>
+        <Stories />
       </section>
       <section className="contact" id="contact">
         <h2>Contact Us</h2>
@@ -356,7 +395,33 @@ const Home = () => {
         </p>
         <h5 className="my-2 mx-1">GemhandsGlobal</h5>
         <h5 className="my-2 mx-1">Hours</h5>
-        <p>Open today 09:00 – 17:00</p>
+        <p>Opens: Monday - Saturday</p>
+        <p>09:00am – 10:00pm</p>
+        <div class="address">
+          <div class="one">
+            <span class="me-1"><i class="fa-solid icon fa-location-dot"></i></span>
+            <div class="">
+              <h4>Office Address</h4>
+              <p>NO 19 Anu Crescent, Palm Crescent Estate Badore Lagos</p>
+            </div>
+          </div>
+          <div class="one">
+            <span class="me-1"><i class="fa-solid icon fa-phone"></i></span>
+            <div class="">
+              <h4>Our Hotline</h4>
+              <p>+2348062538412</p>
+
+            </div>
+          </div>
+          <div class="one">
+            <span class="me-1"><i class="fa-solid icon fa-envelope-circle-check"></i></span>
+            <div class="">
+              <h4>Email Address</h4>
+              <p>Info@gemhandsglobal.com</p>
+              <p>Support@gemhandsglobal.com</p>
+            </div>
+          </div>
+        </div>
         <Link to='https://forms.gle/Wi9t9hVjmgmtUqmX8' target="_blanck" className="my-2" >Get in Touch</Link>
       </section>
       <section className="subscribe">
