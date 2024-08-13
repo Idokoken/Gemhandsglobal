@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tablet, Desktop } from './../Responsive';
+// import { Tablet, Desktop } from './../Responsive';
 import styled from "styled-components";
 
 const Wrapper = styled.div`
