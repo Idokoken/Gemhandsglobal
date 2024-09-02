@@ -26,6 +26,8 @@ const Wrapper = styled.div`
     // font-weight: 700;
   }
   .hero {
+  position: relative;
+  z-index: -2;
   height: 60vh;
   width: 100%;
   background-image: url("/images/home1.png");
@@ -38,6 +40,13 @@ const Wrapper = styled.div`
   padding: 20px;
   ${Tablet({ height: '85vh' })}
   }
+  .hero .hero-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
   .hero h1 {
     margin: 20px 0;
     font-weight: 700;
@@ -258,7 +267,7 @@ const Wrapper = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    background: rgba(209, 23, 11, 0.2);
+    background: rgba(53, 8, 112, 0.2);;
     grid-gap: 10px;
     border-radius: 20px;
     ${Tablet({
@@ -304,6 +313,7 @@ const Home = () => {
   return (
     <Wrapper>
       <div className="hero">
+        <div className='hero-bg'></div>
         <h1>Stay Safe with Gemhands</h1>
         <p>
           Join Gemhands (Fulma Academy) and learn practical self-defense for real-world situations.
@@ -397,25 +407,25 @@ const Home = () => {
         <h5 className="my-2 mx-1">Hours</h5>
         <p>Opens: Monday - Saturday</p>
         <p>09:00am – 10:00pm</p>
-        <div class="address">
-          <div class="one">
-            <span class="me-1"><i class="fa-solid icon fa-location-dot"></i></span>
-            <div class="">
+        <div className="address">
+          <div className="one">
+            <span className="me-1"><i className="fa-solid icon fa-location-dot"></i></span>
+            <div className="">
               <h4>Office Address</h4>
               <p>NO 19 Anu Crescent, Palm Crescent Estate Badore Lagos</p>
             </div>
           </div>
-          <div class="one">
-            <span class="me-1"><i class="fa-solid icon fa-phone"></i></span>
-            <div class="">
+          <div className="one">
+            <span className="me-1"><i className="fa-solid icon fa-phone"></i></span>
+            <div className="">
               <h4>Our Hotline</h4>
               <p>+2348062538412</p>
 
             </div>
           </div>
-          <div class="one">
-            <span class="me-1"><i class="fa-solid icon fa-envelope-circle-check"></i></span>
-            <div class="">
+          <div className="one">
+            <span className="me-1"><i className="fa-solid icon fa-envelope-circle-check"></i></span>
+            <div className="">
               <h4>Email Address</h4>
               <p>Info@gemhandsglobal.com</p>
               <p>Support@gemhandsglobal.com</p>

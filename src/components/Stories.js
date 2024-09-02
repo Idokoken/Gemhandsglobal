@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 function Stories() {
     return (
         <Wrapper className="stories">
-            <div class='hero-bg'></div>
+            <div className='hero-bg'></div>
             <h3>Hear from our students</h3>
             <h5>Coming soon</h5>
         </Wrapper>

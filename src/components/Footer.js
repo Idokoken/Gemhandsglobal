@@ -44,7 +44,7 @@ const Wrapper = styled.footer`
     font-family: "Oleo Script Swash Caps", cursive;
     ${Tablet({ fontSize: "20px" })}
   }
-  img {
+  .footer-logo{
     width: 30px;
     height: 30px;
   }
@@ -55,23 +55,23 @@ const Wrapper = styled.footer`
     display: flex;
   }
   .icons-container {
-    display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
+    display: flex;
+    align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
   }
   .icon-container {
-    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+    border-radius: 5px;
   }
   .icon {
-    // margin-right: 20px;
-    color: white;
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
   }
   a {
     text-decoration: none;
@@ -89,7 +89,7 @@ function Footer() {
       <div className="footer">
         <div className="item">
           <div className="icon-header">
-            <img src="/images/brand.png" alt="brand" />{" "}
+            <img className="footer-logo" src="/images/brand.png" alt="brand" />{" "}
             <h3 className="ms-2">Gemhandsglobal</h3>
           </div>
           {/* <p>
@@ -115,31 +115,16 @@ function Footer() {
 
         </div>
         <div className="item">
-          <h4>Follow Us</h4>
+          <h3>Follow Us</h3>
           <div className="icons-container">
-            <div className="icon-container">
-              <Link to="https://facebook.com/gemhandsglobal">
-                <i className="fa-brands fa-facebook icon"></i>
-              </Link>
-            </div>
 
-            <div className="icon-container">
-              <Link to="https://twitter.com/gemhandsglobal">
-                <i className="fa-brands fa-x-twitter icon"></i>
-              </Link>
-            </div>
+            <Link className="icon-container" to="https://facebook.com/gemhandsglobal">
+              <img className="icon" src="/images/linkedin.png" alt="linkedIn" />
+            </Link>
+            <Link className="icon-container" to="https://youtube.com/gemhandsglobal">
+              <img className="icon" src="/images/youtube.png" alt="youtube" />
+            </Link>
 
-            <div className="icon-container">
-              <Link to="https://instagram.com/gemhandsglobal">
-                <i className="fa-brands fa-instagram icon"></i>
-              </Link>
-            </div>
-
-            <div className="icon-container">
-              <Link to="https://youtube.com/gemhandsglobal">
-                <i className="fa-brands fa-youtube icon"></i>
-              </Link>
-            </div>
           </div>
         </div>
       </div>
