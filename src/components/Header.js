@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import { Tablet } from './../Responsive';
 
 const Wrapper = styled.div`
   margin: 0;
@@ -18,8 +19,11 @@ const Wrapper = styled.div`
 
   .navbar-brand {
     color: var(--primary-color); 
-    font-size: 30px;
-    font-family: "Lobster", cursive;
+    font-size: 24px;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 700;
+    ${Tablet({ fontSize: "30px" })}
   }
   a:hover {
     color: #0a0f83;
@@ -56,24 +60,24 @@ function Header({ user }) {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/">
+                                <Link className="nav-link" to="#home">
                                     Home
-                                </NavLink>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/#contact">
+                                <Link className="nav-link" to="#contact">
                                     Contact
-                                </NavLink>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/#about">
+                                <Link className="nav-link" to="#about">
                                     About Us
-                                </NavLink>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/#gallery">
+                                <Link className="nav-link" to="#gallery">
                                     Gallery
-                                </NavLink>
+                                </Link>
                             </li>
                         </ul>
                     </div>

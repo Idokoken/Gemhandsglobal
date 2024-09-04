@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import { Tablet } from "../Responsive";
+
 
 const Wrapper = styled.footer`
   padding: 0;
@@ -27,7 +28,9 @@ const Wrapper = styled.footer`
   }
   .footer .item .icon-header h3 {
     font-size: 30px;
-    font-family: "Lobster", cursive;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 700;
   }
   .footer .item h3 {
     color: var(--primary-color);
@@ -101,16 +104,16 @@ function Footer() {
         <div className="item">
           <h3>Quick Links</h3>
           <p>
-            <Link to="/">Home</Link>
+            <Link to="#home">Home</Link>
           </p>
           <p>
-            <Link to="/#contact">Contact</Link>
+            <Link to="#contact">Contact</Link>
           </p>
           <p>
-            <Link to="/#about">About Us</Link>
+            <Link to="#about">About Us</Link>
           </p>
           <p>
-            <Link to="/#gallery">Gallery</Link>
+            <Link to="#gallery">Gallery</Link>
           </p>
 
         </div>

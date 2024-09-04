@@ -244,7 +244,7 @@ const Wrapper = styled.div`
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   padding: 20px;
+   padding: 20px;J
 }
 .contact h2{
     color: rgba(0, 0, 0, 0.5);
@@ -291,16 +291,16 @@ const Wrapper = styled.div`
     ${Tablet({ margin: '10px 0', fontSize: '16px' })}
     
 }
-.contact.address.one span{
-  flex - shrink: 0;
+.contact .address .one span{
+  flex-shrink: 0;
   display: flex;
-  justify - content: center;
-  align - items: center;
-  color: var(--primary - color);
-  background: black;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  background: white;
   width: 40px;
   height: 40px;
-  border - radius: 50 %;
+  border-radius: 50%;
 }
 
 }
@@ -312,7 +312,7 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <div className="hero">
+      <div className="hero" id="home">
         <div className='hero-bg'></div>
         <h1>Stay Safe with Gemhands</h1>
         <p>
@@ -333,7 +333,8 @@ const Home = () => {
           community for all.
         </p>
       </div>
-      <div className="our-gallery">
+
+      <div className="our-gallery" id="gallery">
         <h3>Explore Our Self Defense Training Gallery</h3>
         <div className="gallery">
           <div className="img-container">
@@ -397,6 +398,7 @@ const Home = () => {
       <section>
         <Stories />
       </section>
+
       <section className="contact" id="contact">
         <h2>Contact Us</h2>
         <h5 className="my-2 mx-1">Better yet, see us in person!</h5>
