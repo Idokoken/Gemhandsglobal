@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   z-index: -2;
   height: 60vh;
   width: 100%;
-  background-image: url("/images/home1.png");
+  background-image: url("/images/home.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
   .hero h1 {
@@ -347,7 +347,7 @@ const Home = () => {
             <img src="/images/gallery3.jpg" alt="gallery" />
           </div>
           <div className="img-container">
-            <img src="/images/gallery4.png" alt="gallery" />
+            <img src="/images/gallery4.jpg" alt="gallery" />
           </div>
           <div className="img-container">
             <img src="/images/gallery5.jpg" alt="gallery" />
@@ -360,7 +360,7 @@ const Home = () => {
       <div className="training">
         <div className="intro">
           <div className="img-container">
-            <img src="/images/home1.png" alt="training" />
+            <img src="/images/home.jpg" alt="training" />
           </div>
           <div className="content">
             <p className="wel">Hello, welcome to your self defence training academy</p>

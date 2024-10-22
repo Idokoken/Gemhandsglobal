@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import ComingSoon from "./pages/ComingSoon";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
+import ImageSlider from "./components/ImageSlider";
 // import ScrollToTop from "./ScrollToTop";
 
 
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/slide" element={<ImageSlider />} />
         <Route path="/soon" element={<ComingSoon />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
